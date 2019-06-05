@@ -2,11 +2,11 @@
 # debugging purposes.
 
 # Dev note- this gets updated at version change.  This is included in ASCII stream header for debugging purposes.
-BG_VERSION = "1.0"
+BG_VERSION = "1.0.0.0.0" # My edition will always have 2 extra zeros
 
 # Default folder paths
-WRITE_PATH = 'Temp'
-READ_PATH = 'Partial Saves'
+WRITE_PATH = '/app/writes'
+READ_PATH = '/app/saves'
 
 # Crypto
 SCRYPT_N_DEFAULT = 14
