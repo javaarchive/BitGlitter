@@ -13,4 +13,4 @@ def renderVideo(streamOutputPath, dateCreated, imageOutputPath, frameNumberForma
     (ffmpeg
      .input(f'{imageOutputPath}%{len(frameNumberFormatted)}d.png', framerate=framesPerSecond)
      .output(f'{videoOutputPath}{time.strftime("%Y-%m-%d %H-%M-%S", time.localtime(dateCreated))}.mp4')
-     .run())
+     .run(cmd = "./ffmpeg"))
